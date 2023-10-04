@@ -1,0 +1,79 @@
+package entities;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class HourContract {
+
+	private LocalDate date;
+	private Double valuePerHour;
+	private Integer hours;
+
+	private Department department;
+	private List<HourContract> contracts = new ArrayList<>();
+
+	public HourContract() {
+
+	}
+
+	public HourContract(LocalDate date, Double valuePerHour, Integer hours, Department department) {
+		this.date = date;
+		this.valuePerHour = valuePerHour;
+		this.hours = hours;
+		this.department = department;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+	public Double getValuePerHour() {
+		return valuePerHour;
+	}
+
+	public void setValuePerHour(Double valuePerHour) {
+		this.valuePerHour = valuePerHour;
+	}
+
+	public Integer getHours() {
+		return hours;
+	}
+
+	public void setHours(Integer hours) {
+		this.hours = hours;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	public List<HourContract> getContracts() {
+		return contracts;
+	}
+
+	public void setContracts(List<HourContract> contracts) {
+		this.contracts = contracts;
+	}
+
+	public void addContract(HourContract contract) {
+		contracts.add(contract);
+	}
+
+	public void removeContract(HourContract contract) {
+		contracts.remove(contract);
+	}
+
+	public void addContract() {
+
+	}
+
+}

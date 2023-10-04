@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class uri1117 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double nota,soma = 0;
+		double contador = 0;
+		nota = sc.nextDouble();
+		
+		while (contador <3) {
+			if (nota >= 0.00 && nota <=10.00) {
+				soma += nota;
+				contador +=1;
+			}else {
+			System.out.println("Nota invalida");
+			nota = sc.nextDouble();
+			}
+		}
+		System.out.printf("media = ",soma/contador);
+		sc.close();
+	}
+
+}

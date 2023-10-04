@@ -1,0 +1,22 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class uri1117 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double nota1, nota2;
+		double nota = sc.nextDouble();
+		double contador = 0;
+
+		while (contador < 1) {
+			nota = sc.nextDouble();
+
+		}
+
+		sc.close();
+	}
+
+}

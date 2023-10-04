@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class listaExercicioJava_2 {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Escreva um numero: ");
+		Float mediaUm, mediaDois,somaMedia, mediaMedias;
+		mediaUm = (8+9+7)/3;
+		mediaDois = (4+5+6)/3;
+		somaMedia = mediaUm + mediaDois;
+		mediaMedias = (mediaUm + mediaDois)/2;
+		
+		System.out.printf("Media um: %f, media dois: %f, soma das medias: %f, media das soma das medias: %f",mediaUm,
+							mediaDois,somaMedia,mediaMedias);
+		sc.close();
+		
+	}
+
+}

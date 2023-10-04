@@ -1,0 +1,77 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class gerador_numero_jogo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random rand = new Random();
+		
+		System.out.println("Digite quantos jogos você fará: ");
+		int quantosJogos = sc.nextInt();
+		int faixaRandom = 80; 
+		int numRandom,num1= 0,num2= 0,num3= 0,num4= 0,num5= 0,num6= 0;
+		
+		int contadorJogos = 0;
+		while( contadorJogos<quantosJogos) {
+		contadorJogos = contadorJogos +1;
+		contadorJogos = 0;
+		
+		while(contadorJogos<6) {
+		contadorJogos = contadorJogos+1;
+		numRandom = rand.nextInt(faixaRandom);
+		switch (contadorJogos) {
+		case 1: {
+			num1 = numRandom ;
+			break;
+		}
+		case 2: {
+			if (numRandom == num1) {
+			contadorJogos=contadorJogos -1 ;
+			}else {
+				num2 = numRandom ;
+			}
+			break;
+		}
+		case 3: {
+			if (numRandom == num1 && numRandom == num2) {
+			contadorJogos=contadorJogos -1 ;
+			}else {
+				num2 = numRandom ;
+			}
+			break;
+		}
+		case 4: {
+			if (numRandom == num1) {
+			contadorJogos=contadorJogos -1 ;
+			}else {
+				num2 = numRandom ;
+			}
+			break;
+		}
+		case 5: {
+			if (numRandom == num1) {
+			contadorJogos=contadorJogos -1 ;
+			}else {
+				num2 = numRandom ;
+			}
+			break;
+		}
+		case 6: {
+			if (numRandom == num1) {
+			contadorJogos=contadorJogos -1 ;
+			}else {
+				num2 = numRandom ;
+			}
+			break;
+		}
+		
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + contadorJogos);
+		}
+		}
+		
+	}
+		sc.close();
+}
+}

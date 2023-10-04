@@ -1,0 +1,29 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class gerador_numero_jogo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random rand = new Random();
+		
+		System.out.println("Digite quantos jogos você fará: ");
+		int quantosJogos = sc.nextInt();
+		int faixaRandom = 80; 
+		int numRandom,num1,num2,num3,num4,num5,num6;
+		
+		int contadorJogos = 0;
+		while( contadorJogos<quantosJogos) {
+		contadorJogos = contadorJogos +1;
+		contadorJogos = 0;
+		
+		while(contadorJogos<6) {
+		contadorJogos = contadorJogos+1;
+		numRandom = rand.nextInt(faixaRandom);
+		
+		}
+		
+	}
+		sc.close();
+}
+}

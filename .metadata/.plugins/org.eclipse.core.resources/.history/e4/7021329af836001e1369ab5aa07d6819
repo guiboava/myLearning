@@ -1,0 +1,9 @@
+
+public class vetores_exemplos {
+
+	public static void main(String[] args) {
+		int [] A;
+
+	}
+
+}
