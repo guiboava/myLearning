@@ -1,12 +1,24 @@
 package application;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Program {
-	public static void main(String[]args) {
+	public static void main(String[] args) {
 		
-		for (int i = 1; i <= 100; i++) {
-			if (i % 2 == 0.0) {
-				System.out.println(i);
-			}
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		String word = sc.next();
+		
+		char[] vet = word.toCharArray();
+		
+		String wordAlt = "";
+		
+		for (int i = vet.length - 1; i >= 0; i--) {
+			wordAlt += vet[i];
 		}
+		System.out.println(wordAlt);
+		sc.close();
 	}
 }
